@@ -11,19 +11,7 @@
   <canvas id="game"></canvas> 
   <div id="label-container">Voice Commands: "Up", "Down", "Left", "Right"</div>
   
-  <script>
-    // Add canvas scaling in snake.js
-    const canvas = document.getElementById('game');
-    const maxSize = Math.min(window.innerWidth - 40, 400);
-    canvas.width = maxSize;
-    canvas.height = maxSize;
-    
-    window.addEventListener('resize', () => {
-      const newSize = Math.min(window.innerWidth - 40, 400);
-      canvas.width = newSize;
-      canvas.height = newSize;
-    });
-  </script>
+ 
   
   <!-- Keep existing script tags -->
 </body>
