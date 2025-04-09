@@ -20,4 +20,24 @@
     font-size: 2rem;
     width: 100vw;
         color: #bdc4fe;
-  } 
+  }
+  @media screen and (max-width: 600px) {
+    canvas {
+        transform: scale(2);
+        transform-origin: center center;
+        margin: 20px;
+    }
+    
+    #label-container {
+        font-size: 1.2rem;
+        position: relative;
+        bottom: auto;
+        margin-top: 40px;
+    }
+    
+    body {
+        align-items: flex-start;
+        padding-top: 30px;
+        overflow: hidden;
+    }
+}
