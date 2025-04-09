@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  background-color: #ddd;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+main > img {
+  max-height: 300px;
+}
+
+#optionSetion {
+  margin-top: 0px;
+  padding: 10px;
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 45vh;
+}
+
+.option {
+  width: 32%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  border: 10px solid rgb(213, 208, 208);
+}
+.correctOption {
+  width: 32%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  border: 10px solid green;
+}
+
+.incorrectOption {
+  width: 32%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  border: 10px solid red;
+}
+
+
+
+#label-container{
+  display: flex; 
+  position: absolute; 
+  justify-content: space-around;
+  top: 20px;
+  right: 150px;
+  height: 350px;
+  width: 250px;
+}
+
+#names{  
+  width: 100px; 
+  display: flex;
+  flex-wrap: wrap;
+}
+#bar{  
+  width: 100px;
+  flex-wrap: wrap;
+}
+span{
+  margin-top: 2px;
+  margin-right: 20px;
+  height: 15px;
+}
+
+.bars{
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;align-items: center;
+  font-size: 8px;
+  margin-top: 2px;
+  height: 17px; 
+  /* background-color:  rgb(85, 144, 174);  */
+}
+.bar-wrapper{
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  /* background-color: rgb(158, 213, 236); */
+}
