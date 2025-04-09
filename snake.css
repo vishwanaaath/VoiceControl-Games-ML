@@ -16,6 +16,8 @@
   
 
   #label-container{
+    text-align: center;
+    font-size: 2rem;
     width: 100vw;
         color: #bdc4fe;
   }
