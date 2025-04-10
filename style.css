@@ -3,15 +3,14 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: gotham;
 }
 
 h2{
   font-weight: 100;
   font-size: 38px;
-}
- 
+} 
 #description {
   width: 100vw;
   display: flex;justify-content: center;align-items: center;
@@ -145,3 +144,5 @@ body {
   width: 100%; /* Changed from fixed 300px */
   max-width: 300px; /* Add max-width */
 }
+
+
