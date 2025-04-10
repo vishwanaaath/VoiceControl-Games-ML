@@ -199,23 +199,24 @@ h1 {
   }
 
   nav {
-    flex-direction: column;
+    flex-direction: row; 
     align-items: center;
-    gap: 10px;
+    display: flex;
+    width: 100%;
+     flex-wrap: nowrap; 
     height: auto;
   }
 
   #game-level,
   #controls {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center; 
     gap: 10px;
   }
 
   .button-30 {
-    width: 100px;
+    width: 65px;
     height: 40px;
     font-size: 14px;
   }
