@@ -16,9 +16,11 @@ body {
 #container {
         display: flex;
         flex-wrap: wrap;
-        width: 620px;
+        max-width: 620px;
+        min-width: 620px;
         height: 800px;
         padding: 20px;
+        transform: scale(0.9);
         text-align: center;
         background-color: #fff;
         border-radius: 10px;
@@ -176,4 +178,78 @@ h1 {
         top: 30%;
         justify-self:center;
         font-size: 25px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #container {
+    width: 95vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+  }
+
+  #game-level,
+  #controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .button-30 {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #sudoku-board {
+    width: 90vw;
+    height: auto;
+    gap: 2px;
+    margin-top: 20px;
+  }
+
+  .cell {
+    width: 9vw;
+    height: 9vw;
+    font-size: 1rem;
+  }
+
+  #notification {
+    width: 80%;
+    height: 25%;
+    font-size: 18px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #notification-message {
+    font-size: 1.2rem;
+    top: 25%;
+  }
+
+  #finish2 {
+    top: 65%;
+  }
 }
