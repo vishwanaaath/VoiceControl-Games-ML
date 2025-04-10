@@ -6,7 +6,9 @@ body {
   overflow-x: hidden;
   font-family: gotham;
 }
-
+.img{
+  height: 20px;width: 20px;
+}
 h2{
   font-weight: 100;
   font-size: 38px;
@@ -67,6 +69,12 @@ h2{
   color: #007bff;
   font-weight: bold;
   font-family: Arial, sans-serif;
+}
+
+footer{
+  display: flex;width: 100vw;
+  align-items: center;justify-content: center;
+  margin-top: 20px;
 }
 /* Add these media queries at the bottom of your CSS */
 @media screen and (max-width: 768px) {
