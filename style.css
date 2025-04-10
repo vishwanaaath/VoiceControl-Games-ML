@@ -74,7 +74,11 @@ h2{
 footer{
   display: flex;width: 100vw;
   align-items: center;justify-content: center;
-  margin-top: 20px;
+  padding: 20px 0px 0px 0px;
+}
+
+footer a{
+  padding: 10px;
 }
 /* Add these media queries at the bottom of your CSS */
 @media screen and (max-width: 768px) {
