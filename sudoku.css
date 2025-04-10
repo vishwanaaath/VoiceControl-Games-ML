@@ -200,11 +200,13 @@ h1 {
 .label-container{
         padding-bottom: 5px;
         font-size: 1rem;
+        margin-bottom: 5px;
 }
   nav {
     flex-direction: row; 
     align-items: center;
     display: flex;
+    margin-top: 5px;
     width: 100%;
      flex-wrap: nowrap; 
     height: auto;
