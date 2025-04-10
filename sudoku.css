@@ -213,6 +213,7 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center; 
     gap: 10px;
+    transform: scale(0.9);
   }
 
   .button-30 {
