@@ -110,11 +110,7 @@ async function init() {
   const recognizer = await createModel(); // Load the recognizer model
   const classLabels = recognizer.wordLabels(); // Get the class labels from the model
   const labelContainer = document.getElementById("names"); // Container for displaying labels
-
-  // Create and append div elements for each label (optional UI feedback)
-  for (let i = 0; i < classLabels.length; i++) {
-    labelContainer.appendChild(document.createElement("div"));
-  }
+ 
 
   // Start listening for voice commands
   recognizer.listen(

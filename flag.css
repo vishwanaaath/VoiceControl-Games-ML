@@ -1,12 +1,15 @@
+/* Base styles for desktop and tablet */
 body {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   background-color: #ddd;
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -18,87 +21,96 @@ main {
 
 main > img {
   max-height: 300px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 #optionSetion {
-  margin-top: 0px;
+  margin-top: 0;
   padding: 10px;
-  gap: 50px;
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 45vh;
+  height: auto;
 }
 
-.option {
-  width: 32%;
-  height: 40%;
+/* Shared button styles */
+.option,
+.correctOption,
+.incorrectOption {
+  width: 31%;
+  min-width: 120px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: xx-large;
-  border: 10px solid rgb(213, 208, 208);
+  font-size: 1.5rem;
+  border: 8px solid rgb(213, 208, 208);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  background-color: white;
+  transition: all 0.2s ease;
 }
+
 .correctOption {
-  width: 32%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: xx-large;
-  border: 10px solid green;
+  border-color: green;
 }
 
 .incorrectOption {
-  width: 32%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: xx-large;
-  border: 10px solid red;
+  border-color: red;
 }
 
-
-
-#label-container{
-  display: flex; 
-  position: absolute; 
+#label-container {
+  display: flex;
+  position: absolute;
   justify-content: space-around;
   top: 20px;
-  right: 150px;
+  right: 20px;
   height: 350px;
   width: 250px;
 }
 
-#names{  
-  width: 100px; 
-  display: flex;
-  flex-wrap: wrap;
-}
-#bar{  
-  width: 100px;
-  flex-wrap: wrap;
-}
-span{
-  margin-top: 2px;
-  margin-right: 20px;
-  height: 15px;
+/* 🔽 Mobile Styles */
+@media (max-width: 768px) {
+  main {
+    padding: 3vh;
+  }
+
+  main > img {
+    max-height: 200px;
+  }
+
+  #optionSetion {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .option,
+  .correctOption,
+  .incorrectOption {
+    width: 80%;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  #label-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
-.bars{
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;align-items: center;
-  font-size: 8px;
-  margin-top: 2px;
-  height: 17px; 
-  /* background-color:  rgb(85, 144, 174);  */
-}
-.bar-wrapper{
-  color: white;
-  border-radius: 5px;
-  width: 100px;
-  /* background-color: rgb(158, 213, 236); */
+/* Optional: better touch feedback */
+.option:active,
+.correctOption:active,
+.incorrectOption:active {
+  transform: scale(0.98);
 }
