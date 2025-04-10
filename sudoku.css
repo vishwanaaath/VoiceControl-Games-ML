@@ -16,8 +16,7 @@ body {
 #container {
         display: flex;
         flex-wrap: wrap;
-        max-width: 620px;
-        min-width: 620px;
+        max-width: 620px; 
         height: 800px;
         padding: 20px;
         transform: scale(0.9);
