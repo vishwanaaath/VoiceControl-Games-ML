@@ -197,7 +197,10 @@ h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
   }
-
+.label-container{
+        padding-bottom: 5px;
+        font-size: 2rem;
+}
   nav {
     flex-direction: row; 
     align-items: center;

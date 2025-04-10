@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudoku</title>
-  <link rel="stylesheet" href="sudoku.css">
-</head>
-<body>
-  <div id="container" >
-    
-    <h1>SUDOKU</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>SUDOKU</h1>
 
-    <div id="label-container" style="margin-bottom: 5px;"></div>
+      <div id="label-container" style="margin-bottom: 5px"></div>
 
-    <nav>
-    <div id="game-level">
-    <button value="easy" id="easy" class="button-30 level-selectors" onclick="generateSudoku('easy')" >Easy</button>
-    <button value="medium" id="medium" class="button-30 level-selectors" onclick="generateSudoku('medium')">Medium</button>
-    <button value="hard" id="hard" class="button-30 level-selectors" onclick="generateSudoku('hard')">Hard</button> 
-    </div> 
+      <nav>
+        <div id="game-level">
+          <button
+            value="easy"
+            id="easy"
+            class="button-30 level-selectors"
+            onclick="generateSudoku('easy')">
+            Easy
+          </button>
+          <button
+            value="medium"
+            id="medium"
+            class="button-30 level-selectors"
+            onclick="generateSudoku('medium')">
+            Medium
+          </button>
+          <button
+            value="hard"
+            id="hard"
+            class="button-30 level-selectors"
+            onclick="generateSudoku('hard')">
+            Hard
+          </button>
+        </div>
 
-    <div id="controls">    
-    <button id="check" class="button-30 controls" onclick="check()" style="display: none;" >Check</button>
-    <button id="solve" class="button-30 controls" onclick="solve()" style="display: none;">Solve </button> 
-    <button id="exit" class="button-30 controls" onclick="emptygrid()" style="display: none;" >Quit</button>
-    <button id="finish" class="button-30" onclick="emptygrid()" style="display: none;" >Finish</button>
+        <div id="controls">
+          <button
+            id="check"
+            class="button-30 controls"
+            onclick="check()"
+            style="display: none">
+            Check
+          </button>
+          <button
+            id="solve"
+            class="button-30 controls"
+            onclick="solve()"
+            style="display: none">
+            Solve
+          </button>
+          <button
+            id="exit"
+            class="button-30 controls"
+            onclick="emptygrid()"
+            style="display: none">
+            Quit
+          </button>
+          <button
+            id="finish"
+            class="button-30"
+            onclick="emptygrid()"
+            style="display: none">
+            Finish
+          </button>
+        </div>
+      </nav>
+
+      <div id="sudoku-board"></div>
     </div>
-    </nav>
+    <div id="notification" style="display: none" onclick="end()">
+      <p id="notification-message"></p>
+      <button
+        id="finish2"
+        class="button-30"
+        onclick="emptygrid()"
+        style="display: none">
+        Finish
+      </button>
+    </div>
 
-    <div id="sudoku-board"></div>
-    
-  </div>
-  <div id="notification" style="display: none;" onclick="end()">  
-  <p id="notification-message"></p>
-  <button id="finish2" class="button-30" onclick="emptygrid()" style="display: none;">Finish</button>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
-
-<script src="sudoku.js"></script>
-
-</body>
+    <script src="sudoku.js"></script>
+  </body>
 </html>
