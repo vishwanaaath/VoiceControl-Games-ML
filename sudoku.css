@@ -6,7 +6,7 @@
 
 body {
         font-family: "JetBrains Mono", monospace;
-        background-color: #f4f4f4;
+        background-color: #ffffff;
         display: flex;
         justify-content: center; 
         align-items: center;
@@ -185,6 +185,7 @@ h1 {
     flex-direction: column;
     height: auto;
     padding: 20px;
+    background-color: white;
   }
 
   #container {
@@ -199,7 +200,7 @@ h1 {
   }
 .label-container{
         padding-bottom: 5px;
-        font-size: 1rem;
+        font-size:5px;
         margin-bottom: 5px;
 }
   nav {
